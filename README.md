@@ -30,35 +30,39 @@ A full-stack crypto trading application with Node.js (Express), Sequelize, Postg
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo/backend
-
-
+   ```
 2. Install dep
 
+   ```bash
    npm install
-
+   ```
 3. Configure your database connection in config/config.json or .env file (depending on your setup):
-   
+
+  ```bash 
   DB_HOST=localhost
   DB_USER=your_db_user
   DB_PASS=your_db_password
   DB_NAME=your_db_name
-
+  ```
 4. Run Sequelize migrations (if any) or sync the models:
-
+   
+  ```bash
   npx sequelize-cli db:migrate
+   ```
 
 5. Start the backend server:
 
-   npm run start or nodemon app.js (if installed)
-
+   ```bash
+   npm run start
+   ```
 6. go http://localhost:3000/orders to view orders
 
 7. in cmd tpye to create a orders
-
-Invoke-RestMethod -Uri "http://localhost:3000/orders" -Method POST `
-  -ContentType "application/json" `
-  -Body '{"user_id":1,"crypto_id":1,"type":"buy","amount":1.5,"price":50000}'
-
+   bash```
+      Invoke-RestMethod -Uri "http://localhost:3000/orders" -Method POST `
+        -ContentType "application/json" `
+        -Body '{"user_id":1,"crypto_id":1,"type":"buy","amount":1.5,"price":50000}'
+   ```
 
 
 
