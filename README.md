@@ -58,7 +58,7 @@ A full-stack crypto trading application with Node.js (Express), Sequelize, Postg
 6. go http://localhost:3000/orders to view orders
 
 7. in cmd tpye to create a orders
-   bash```
+   ```bash
       Invoke-RestMethod -Uri "http://localhost:3000/orders" -Method POST `
         -ContentType "application/json" `
         -Body '{"user_id":1,"crypto_id":1,"type":"buy","amount":1.5,"price":50000}'
